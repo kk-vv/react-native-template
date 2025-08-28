@@ -12,12 +12,16 @@ interface Actions {
 
 type SessionContextType = States & Actions
 
-const SessionContext = createContext<SessionContextType | undefined>(undefined)
+const SessionContext = createContext<SessionContextType>({
+  isLoggedIn: false,
+  onLogin: () => null,
+  onLogout: () => null
+})
 
 export const SessionProvider = ({ children }: PropsWithChildren) => {
   const segments = useSegments()
 
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false)
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(true)
   const onLogin = useCallback(() => {
     setIsLoggedIn(true)
   }, [])
@@ -33,7 +37,7 @@ export const SessionProvider = ({ children }: PropsWithChildren) => {
     } else if (!inAuthGroup && !isLoggedIn) {
       router.replace('/(auth)')
     }
-  }, [isLoggedIn])
+  }, [isLoggedIn, segments])
 
   return (
     <SessionContext.Provider

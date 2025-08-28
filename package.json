@@ -27,7 +27,8 @@
     "react-native-safe-area-context": "5.4.0",
     "zustand": "^5.0.8",
     "react-dom": "19.0.0",
-    "react-native-web": "^0.20.0"
+    "react-native-web": "^0.20.0",
+    "expo-splash-screen": "~0.30.10"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
