@@ -2,11 +2,10 @@ import React from 'react'
 import { Stack } from 'expo-router'
 import { AppColors } from '@/constants/Themes'
 
-export default function MarketPageLayout() {
+export default function SignInLayout() {
   return <Stack screenOptions={{
-    title: 'Market',
     contentStyle: { backgroundColor: AppColors.background_white },
     headerBackButtonDisplayMode: 'minimal',
-    headerTintColor: AppColors.text_black
+    headerTintColor: AppColors.text_black,
   }} />
 }

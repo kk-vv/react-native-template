@@ -7,7 +7,6 @@ const PositionsPage = () => {
       {/* use style define styles */}
       <Text style={{ textAlign: 'center' }}>PositionsPage</Text>
     </View>
-
   )
 }
 

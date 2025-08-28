@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const SignInPage = () => {
+const MailCodeInputPage = () => {
   return (
     <View>
-      <Text>SignInPage</Text>
+      <Text>MailCodeInputPage</Text>
     </View>
   )
 }
 
-export default SignInPage
+export default MailCodeInputPage

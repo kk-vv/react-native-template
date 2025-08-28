@@ -1,8 +1,8 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import AppButton from 'components/AppButton'
-import { Container } from 'components/Container'
 import { router } from 'expo-router'
+import AppButton from '@/components/AppButton'
+import { Container } from '@/components/Container'
 
 const MarketPage = () => {
   return (

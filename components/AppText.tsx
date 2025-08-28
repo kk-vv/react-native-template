@@ -1,6 +1,7 @@
 import { Text } from "react-native"
 import { DefaultTextProps } from "./ViewPropsExt"
-import { AppColors, AppFontFamily, AppFontSize } from "constants/Themes"
+import { AppFontFamily, AppFontSize, AppColors } from "@/constants/Themes"
+import React from "react"
 
 export function AppText({
   style,

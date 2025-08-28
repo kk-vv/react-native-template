@@ -1,9 +1,8 @@
 import React from 'react'
-import { Container } from 'components/Container'
-import AppButton from 'components/AppButton'
 import { router } from 'expo-router'
 import { View } from 'react-native'
-import { AppColors } from 'constants/Themes'
+import AppButton from '@/components/AppButton'
+import { Container } from '@/components/Container'
 
 const HomePage = () => {
   return (

@@ -1,6 +1,6 @@
 
 import EventEmitter from 'events';
-import { APIRequest, APIRequestTarget } from './APIRequest';
+import { APIRequestTarget } from './APIRequest';
 
 export interface APIDataResponse<T> {
   status: number

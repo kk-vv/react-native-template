@@ -1,10 +1,12 @@
 import { StyleSheet, View } from 'react-native'
 import { Tabs } from 'expo-router'
-import { AppText } from 'components/AppText'
-import { AppColors, AppFontSize } from 'constants/Themes'
 import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons'
+import { AppText } from '@/components/AppText'
+import { AppColors, AppFontSize } from '@/constants/Themes'
+import React from 'react'
 
 export default function TabLayout() {
+
   return <Tabs>
     <Tabs.Screen name='(home)' options={{
       tabBarLabel: ({ focused }) => {

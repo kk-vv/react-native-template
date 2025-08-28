@@ -1,13 +1,19 @@
-import { View, Text } from 'react-native'
 import React from 'react'
+import { useSessionContext } from '@/biz/contexts/AuthContext'
+import AppButton from '@/components/AppButton'
+import { Container } from '@/components/Container'
+import { SPACING } from '@/constants/Themes'
+import { Stack } from 'expo-router'
 
 const ProfilePage = () => {
+  const { onLogout } = useSessionContext()
   return (
-    <View className='flex flex-1 justify-center'>
-      {/* use style define styles */}
-      <Text style={{ textAlign: 'center' }}>ProfilePage</Text>
-    </View>
-
+    <Container style={{ justifyContent: 'center', marginHorizontal: SPACING.edge }}>
+      <Stack.Screen options={{
+        headerShown: false
+      }} />
+      <AppButton title='Logout' onPress={onLogout} />
+    </Container>
   )
 }
 

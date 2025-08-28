@@ -1,6 +1,6 @@
 import React from 'react'
 import { Stack } from 'expo-router'
-import { AppColors } from 'constants/Themes'
+import { AppColors } from '@/constants/Themes'
 
 export default function ProfilePageLayout() {
   return <Stack screenOptions={{

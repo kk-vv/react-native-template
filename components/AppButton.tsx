@@ -1,10 +1,10 @@
-import { EmptyCallback } from 'extensions/Callbacks'
+import { AppColors, AppFontSize, AppFontFamily } from '@/constants/Themes'
+import { EmptyCallback } from '@/extensions/Callbacks'
 import React from 'react'
 import { Pressable } from 'react-native'
 import { SingleLineText } from './AppText'
-import { DefaultViewProps } from './ViewPropsExt'
 import { ItemsCenterContainer } from './ItemsCenterContainer'
-import { AppColors, AppFontFamily, AppFontSize } from 'constants/Themes'
+import { DefaultViewProps } from './ViewPropsExt'
 
 export type ThemeButtonProps = DefaultViewProps & {
   title: string
